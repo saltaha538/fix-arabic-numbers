@@ -1,5 +1,5 @@
 # fix-arabic-numbers
-Replace arabic numbers with engilsh ones.
+Replace arabic numbers with arabic ones.
 
 
 
@@ -12,11 +12,11 @@ Simply pass a String, Object or an Array.
 ```js
 var fixArabicNumbers = require('fix-arabic-numbers');
 
-fixArabicNumbers('١٢٣٤٥٦٧٨٩٠ـ٪'); // return '1234567890_%'
+fixArabicNumbers('١٢٣٤٥٦٧٨٩٠ـ٪'); // return '١٢٣٤٥٦٧٨٩٠_%'
 
-fixArabicNumbers(['١', '٢', 'test ٣', 'تجربة ٤']); // return ['1', '2', 'test 3', 'تجربة 4']
+fixArabicNumbers(['١', '٢', 'test ٣', 'تجربة ٤']); // return ['١', '٢', 'test ٣', 'تجربة ٤']
 
-fixArabicNumbers({test: '١٢٣٤'}); // return {test: '1234'}
+fixArabicNumbers({test: '١٢٣٤'}); // return {test: '١٢٣٤'}
 ```
 
 
