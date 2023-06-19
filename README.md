@@ -14,8 +14,7 @@ var fixArabicNumbers = require('fix-arabic-numbers');
 
 fixArabicNumbers('١٢٣٤٥٦٧٨٩٠ـ٪'); // return '1234567890_%'
 
-fixArabicNumbers(['١', '٢', 'test ٣', 'تجربة ٤']); // return ['1', '2', 'test 3', 'تجربة 4']
-
+fixArabicNumbers(['١', '٢', 'test ٣', 'تجربة ٤']); // return ['١', '٢', 'test ٣', 'تجربة ٤']
 fixArabicNumbers({test: '١٢٣٤'}); // return {test: '1234'}
 ```
 
